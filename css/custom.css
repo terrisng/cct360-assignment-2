@@ -1,0 +1,519 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*Footer start*/
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+/*Footer end*/
+
+
+/*Elements of homepage start here*/
+.apply-custom-font{
+	font-family: 'Noto Sans', sans-serif;
+}
+
+.custom-text-spacing{
+	line-height:2;
+}
+
+.apply-deepgray-color{
+	color:#464946;
+}
+
+.apply-deepnavy-color{
+	color:#04151F;
+}
+
+.nav-background-color{
+	background-color:#04151F;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+	color: rgba(255, 255, 255, 0.75);
+}
+
+.navbar-dark .navbar-nav .nav-link:hover{
+	color: rgba(255, 255, 255, 1);
+}
+
+.jumbotron-homepage{
+	background-image: url("../images/Homepage-cover-image.jpeg");
+	background-position: center;
+	background-size: cover;
+	height: auto;
+	background-color: #000;
+	border-radius: 0;
+}
+
+.jumbotron-homepage h1 {
+	color: #fff;
+	font-family: 'Noto Sans', sans-serif;	
+}
+
+.jumbotron-homepage p{
+	color: #fff;
+	font-family: 'Noto Sans', sans-serif;
+	padding: 0.5em;
+}
+
+#btn-contact-me{
+	background-color: rgba(0,0,0,0.50);
+	border: 1px solid #000;
+	color: rgba(255,255,255,1);
+}
+
+#btn-contact-me:hover{
+	background-color:rgba(255,255,255,0.75);
+	color:#04151F;
+}
+
+#btn-contact-me:focus{
+	box-shadow: 0 0 0 0.1rem rgba(0, 0, 0, 0.5);
+}
+
+.custom-btn-animation span{
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.custom-btn-animation span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.custom-btn-animation:hover span {
+  padding-right: 25px;
+}
+
+.custom-btn-animation:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.about-me-link-decoration a{
+	color:#106193;
+	text-decoration:none;
+}
+
+.about-me-link-decoration a:hover{
+	color:#000;
+}
+
+.link-to-utm-description a{
+	color:#106193;
+	text-decoration:none;
+	font-weight: 400;
+}
+
+.link-to-utm-description a:hover{
+	text-decoration:underline;
+}
+/*Home page End*/
+
+/*Elements in About Me page*/
+.jumbotron-about-me-page{
+	background-image: url("../images/About-me-page-Jumbotron-Cover-Image.jpeg");
+	background-position: center;
+	background-size: cover;
+	height: auto;
+	background-color: #000;
+	border-radius: 0;
+}
+
+.jumbotron-about-me-page h1 {
+	color: #fff;
+	font-family: 'Noto Sans', sans-serif;
+	background-color:rgba(0,0,0,0.50)
+}
+
+.education-link-to-school-site{
+	text-decoration:none;
+	color:#464946;
+}
+
+.education-link-to-school-site:hover{
+	color:#464946;
+}
+
+/*About Me End*/
+
+/*Resume Page Start*/
+.jumbotron-resume-page{
+	background-image: url("../images/Resume-Jumbotron.jpeg");
+	background-position: center;
+	background-size: cover;
+	height: auto;
+	background-color: #000;
+	border-radius: 0;
+}
+
+.jumbotron-resume-page h1 {
+	color: #fff;
+	font-family: 'Noto Sans', sans-serif;
+	background-color:rgba(0,0,0,0.50);
+}
+
+.download-resume{
+	background-color:#106193;
+	text-decoration:none;
+	padding: 12px 30px;
+	cursor: pointer;
+	color:#fff;
+	width:100%;
+}
+
+.download-resume:hover{
+	color:white;
+	background-color:royalblue;
+}
+
+.resume-section-title{
+	font-weight: bold;
+}
+/*Resume Page End*/
+
+/*Contact Me Page Start*/
+.jumbotron-contact-page{
+	background-image: url("../images/Contact-Me-cover-image.jpeg");
+	background-position: center;
+	background-size: cover;
+	height: auto;
+	background-color: #000;
+	border-radius: 0;
+}
+
+.jumbotron-contact-page h1 {
+	color: #fff;
+	font-family: 'Noto Sans', sans-serif;
+	background-color:rgba(0,0,0,0.45)
+}
+
+.feedback-sub-title{
+	font-weight:bold;
+}
+
+/*Contace Me Page End*/
+
+/*Gallery page Start*/
+.jumbotron-gallery-page{
+	background-image: url("../images/gallery-cover-image.jpeg");
+	background-position: center;
+	background-size: cover;
+	height: auto;
+	background-color: #000;
+	border-radius: 0;
+}
+
+.jumbotron-gallery-page h1 {
+	color: #fff;
+	font-family: 'Noto Sans', sans-serif;
+	background-color:rgba(0,0,0,0)
+}
+
+.jumbotron-gallery-page p{
+	color: #fff;
+	font-family: 'Noto Sans', sans-serif;
+	padding: 0.5em;
+}
+
+	/*Featured photos slideshow*/
+	.featured-photos-slideshow-container img,
+	img.featured-photos-slideshow-container-gallery-thumb{
+	  vertical-align: middle;
+	}
+
+	/* Position the image container (needed to position the left and right arrows) */
+	.featured-photos-slideshow-container {
+	  position: relative;
+	}
+
+	/* Hide the images by default */
+	.featured-photos-slideshow-mySlides {
+	  display: none;
+	}
+
+	/* Add a pointer when hovering over the thumbnail images */
+	.featured-photos-slideshow-cursor {
+	  cursor: pointer;
+	}
+
+	/* Next & previous buttons */
+	.featured-photos-slideshow-prev,
+	.featured-photos-slideshow-next {
+	  cursor: pointer;
+	  position: absolute;
+	  top: 40%;
+	  width: auto;
+	  padding: 16px;
+	  margin-top: -50px;
+	  color: white;
+	  font-weight: bold;
+	  font-size: 20px;
+	  border-radius: 0 3px 3px 0;
+	  user-select: none;
+	  -webkit-user-select: none;
+	  background-color: rgba(255,255,255,0.5)
+	}
+
+	/* Position the "next button" to the right */
+	.featured-photos-slideshow-next {
+	  right: 0;
+	  border-radius: 3px 0 0 3px;
+	}
+
+	/* On hover, add a black background color with a little bit see-through */
+	.featured-photos-slideshow-prev:hover,
+	.featured-photos-slideshow-next:hover {
+	  background-color: rgba(255,255,255,0.75);
+	}
+
+	/* Number text (1/3 etc) */
+	.featured-photos-slideshow-numbertext {
+	  color: #f2f2f2;
+	  font-size: 12px;
+	  padding: 8px 12px;
+	  position: absolute;
+	  top: 0;
+	}
+
+	/* Container for image text */
+	.featured-photos-slideshow-caption-container {
+	  text-align: center;
+	  background-color: #222;
+	  padding: 2px 16px;
+	  color: white;
+	}
+
+	.featured-photos-slideshow-row:after {
+	  content: "";
+	  display: table;
+	  clear: both;
+	}
+
+	/* Six columns side by side */
+	.featured-photos-slideshow-column {
+	  float: left;
+	  width: 16.66%;
+	}
+
+	/* Add a transparency effect for thumnbail images */
+	.featured-photos-slideshow-container-gallery-thumb {
+	  opacity: 0.6;
+	}
+
+	.featured-photos-slideshow-active,
+	.featured-photos-slideshow-container-gallery-thumb:hover {
+	  opacity: 1;
+	}
+	/*Featured photos End*/
+
+
+
+	/*Image grid Start*/
+	.image-grid-row {
+	  display: -ms-flexbox; /* IE10 */
+	  display: flex;
+	  -ms-flex-wrap: wrap; /* IE10 */
+	  flex-wrap: wrap;
+	  padding: 0 4px;
+	}
+
+	/* Create four equal columns that sits next to each other */
+	.image-grid-column {
+	  -ms-flex: 25%; /* IE10 */
+	  flex: 25%;
+	  max-width: 25%;
+	  padding: 0 4px;
+	}
+
+	.image-grid-column img {
+	  margin-top: 8px;
+	  vertical-align: middle;
+	  width: 100%;
+
+	}
+
+	/* Responsive layout - makes a two column-layout instead of four columns */
+	@media screen and (max-width: 800px) {
+	  .image-grid-column {
+		-ms-flex: 50%;
+		flex: 50%;
+		max-width: 50%;
+	  }
+	}
+
+	/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+	@media screen and (max-width: 600px) {
+	  .image-grid-column {
+		-ms-flex: 100%;
+		flex: 100%;
+		max-width: 100%;
+	  }
+	}
+
+	/*Photo grid modal*/
+
+	#image-grid-myImg {
+	  border-radius: 5px;
+	  cursor: pointer;
+	  transition: 0.3s;
+	}
+
+	#image-grid-myImg:hover {
+	  opacity: 0.2;
+	  transition: .5s ease;
+	}
+
+	.image-grid-modal {
+	  display: none;
+	  /* Hidden by default */
+	  position: fixed;
+	  /* Stay in place */
+	  z-index: 1;
+	  /* Sit on top */
+	  padding-top: 100px;
+	  /* Location of the box */
+	  left: 0;
+	  top: 0;
+	  width: 100%;
+	  /* Full width */
+	  height: 100%;
+	  /* Full height */
+	  overflow: auto;
+	  /* Enable scroll if needed */
+	  background-color: rgb(0, 0, 0);
+	  /* Fallback color */
+	  background-color: rgba(0, 0, 0, 0.9);
+	  /* Black w/ opacity */
+	}
+
+	.image-grid-modal-content {
+	  margin: auto;
+	  display: block;
+	  width: 80%;
+	  max-width: 700px;
+	}
+
+	#image-grid-caption {
+	  margin: auto;
+	  display: block;
+	  width: 80%;
+	  max-width: 700px;
+	  text-align: center;
+	  color: #ccc;
+	  padding: 10px 0;
+	  height: 150px;
+	}
+
+	.image-grid-modal-content,
+	#image-grid-caption {
+	  -webkit-animation-name: zoom;
+	  -webkit-animation-duration: 0.6s;
+	  animation-name: zoom;
+	  animation-duration: 0.6s;
+	}
+
+	@-webkit-keyframes zoom {
+	  from {-webkit-transform:scale(0)} 
+	  to {-webkit-transform:scale(1)}
+	}
+
+	@keyframes zoom {
+	  from {
+		transform: scale(0)
+	  }
+	  to {
+		transform: scale(1)
+	  }
+	}
+
+	.image-grid-close {
+	  position: absolute;
+	  top: 15px;
+	  right: 35px;
+	  color: #f1f1f1;
+	  font-size: 40px;
+	  font-weight: bold;
+	  transition: 0.3s;
+	}
+
+	.image-grid-close:hover,
+	.image-grid-close:focus {
+	  color: #bbb;
+	  text-decoration: none;
+	  cursor: pointer;
+	}
+
+	@media only screen and (max-width: 700px) {
+	  .image-grid-modal-content {
+		width: 100%;
+	  }
+	}
+/*Gallery page END*/
+
+/*Process page START*/
+.jumbotron-process-page{
+	background-image: url("../images/Process-page-cover-image.jpeg");
+	background-position: center;
+	background-size: cover;
+	height: auto;
+	background-color: #000;
+	border-radius: 0;
+}
+
+.jumbotron-process-page h1 {
+	color: #fff;
+	font-family: 'Noto Sans', sans-serif;
+	background-color:rgba(0,0,0,0.50);
+}
+
+.jumbotron-process-page p{
+	color: #fff;
+	font-family: 'Noto Sans', sans-serif;
+	padding: 0.5em;
+	background-color:rgba(0,0,0,0.50);
+}
+
+.sub-list-item{
+	list-style-type: circle;
+}
+
+.text-orange{
+	color:#854900;
+}
+
+.logo-design-description{
+	width:300px;
+}
+
+.pages-description-hover-effects{
+	transition: 0.5s;
+}
+
+.pages-description-hover-effects:hover{
+	opacity: 0.4;
+	transition: .5s ease;
+}
+
+.text-success{
+	color:#145222 !important;
+}
+
+.text-primary{
+	color:#0051A8 !important;
+}
+/*Process page END*/
+
+
+
+
